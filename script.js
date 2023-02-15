@@ -14,7 +14,7 @@ const skills = [
 skills.map((item) => {
     $(".skillsBar").append(`
     <div>
-        <div><b>${item.name}</b></div>
+        <h3>${item.name}</h3>
         <div class="bar-out">
             <div style="width: ${item.porcentagem} "class="inside-bar"></div>
         </div>
