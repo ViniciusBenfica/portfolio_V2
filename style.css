@@ -5,40 +5,54 @@ body {
     border: 0;
     color: #1D1C24;
 }
-
+ 
 section>div {
     padding: 0 350px;
+    display: flex;
+    justify-content: space-between;
 }
 
 section:nth-child(2n+1) {
     background-color: #F0EFF5;
 }
 
-.header {
-    box-sizing: border-box;
-    font-family: 'Inter';
+section:nth-child(2n+2) {
+    background-color: #F9F9FC;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    padding: 24px 352px;
+    height: 90vh;
+}
+
+.header {
+    align-items: center;
+    height: 10vh;
     border-bottom: 2px solid #E7E6EF;
+}
+
+.header h2 {
+    color: #5562FF;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.header > div {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
     color: #1D1C24;
-}
-
-.header h3 {
     cursor: pointer;
 }
 
-.home {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 170px;
+.home{
+
 }
 
 .home>div {
@@ -98,6 +112,7 @@ section:nth-child(2n+1) {
     line-height: 17px;
     color: #F2F1F0;
     text-align: center;
+    cursor: pointer;
 }
 
 .details>div button:last-child {
@@ -115,6 +130,7 @@ section:nth-child(2n+1) {
     border-radius: 8px;
     text-align: center;
     color: #5562FF;
+    cursor: pointer;
 }
 
 .code {
@@ -159,15 +175,12 @@ section:nth-child(2n+1) {
     color: #5562FF;
 }
 
-.skills {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 170px;
-
+.skills{
+    height: 318px;
 }
 
 .skills>div {
-    width: 50%;
+    width: 40%;
 }
 
 .skills-text h2 {
@@ -191,6 +204,7 @@ section:nth-child(2n+1) {
 .skillsBar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 80%;
 }
 
 .skillsBar h3 {
@@ -203,10 +217,11 @@ section:nth-child(2n+1) {
 }
 
 .bar-out {
-    width: 100%;
+    width: 90%;
     height: 15px;
     background-color: #F9F9FC;
-    border-radius: 10px;
+    border: 1px solid #E7E6EF;
+    border-radius: 200px;
     overflow: hidden;
 }
 
