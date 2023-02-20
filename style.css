@@ -5,7 +5,7 @@ body {
     border: 0;
     color: #1D1C24;
 }
- 
+
 section>div {
     padding: 0 350px;
     display: flex;
@@ -38,7 +38,7 @@ section:nth-child(2n+2) {
     line-height: 29px;
 }
 
-.header > div {
+.header>div {
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -171,7 +171,7 @@ section:nth-child(2n+2) {
     color: #5562FF;
 }
 
-.skills{
+.skills {
     height: 318px;
 }
 
@@ -228,11 +228,11 @@ section:nth-child(2n+2) {
     border-radius: 10px;
 }
 
-.about>div:first-child{
+.about>div:first-child {
     width: 40%;
 }
 
-.about>div:last-child{
+.about>div:last-child {
     width: 43%;
 }
 
@@ -286,22 +286,77 @@ section:nth-child(2n+2) {
     margin: 0;
 }
 
-.works>div:nth-child(1){
+.works>div:nth-child(1) {
     top: 0;
     left: 0;
 }
 
-.works>div:nth-child(2){
+.works>div:nth-child(2) {
     top: 72px;
     right: 0;
 }
 
-.works>div:nth-child(3){
+.works>div:nth-child(3) {
     bottom: 0;
     left: 0;
 }
 
-.works>div:nth-child(4){
+.works>div:nth-child(4) {
     bottom: -72px;
     right: 0;
+}
+
+.findMe>div {
+    width: 40%;
+}
+
+.linkMe {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.linkMe span {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: rgba(29, 28, 36, 0.6);
+}
+
+.startProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 64px;
+    gap: 8px;
+    width: 592px;
+    height: 123px;
+    background: #5562FF;
+    border-radius: 16px;
+}
+
+.startProject h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #F9F9FC;
+}
+
+.startProject h4 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: rgba(249, 249, 252, 0.6);
 }
