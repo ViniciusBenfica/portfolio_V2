@@ -8,8 +8,9 @@ body {
 }
 
 section>div {
-    /* padding: 0 350px; */
+    padding: 0 10%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -41,10 +42,12 @@ section>div {
     cursor: pointer;
 }
 
-
+.home {
+    height: 100vh;
+}
 
 .home>div {
-    z-index: 9999;
+    z-index: 2;
     width: 40%;
 }
 
@@ -126,8 +129,7 @@ section>div {
 .code {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    gap: 30px;
 }
 
 .code>div:first-child {
@@ -361,7 +363,7 @@ section>div {
     color: rgba(249, 249, 252, 0.6);
 }
 
-.container {
+.background {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -384,7 +386,7 @@ section>div {
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0 50px #4fc3dc,
+        0 0 50px #FE481C,
         0 0 100px #4fc3dc;
     animation: animate 12s linear infinite;
     animation-duration: calc(125s / var(--i));
