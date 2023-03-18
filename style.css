@@ -3,24 +3,14 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    color: #1D1C24;
+    background-color: #1D1C24;
+    color: #fff;
 }
 
 section>div {
-    padding: 0 350px;
+    /* padding: 0 350px; */
     display: flex;
     justify-content: space-between;
-}
-
-section:nth-child(2n+1) {
-    background-color: #F0EFF5;
-}
-
-section:nth-child(2n+2) {
-    background-color: #F9F9FC;
-    display: flex;
-    align-items: center;
-    height: 90vh;
 }
 
 .header {
@@ -51,7 +41,10 @@ section:nth-child(2n+2) {
     cursor: pointer;
 }
 
+
+
 .home>div {
+    z-index: 9999;
     width: 40%;
 }
 
@@ -123,6 +116,7 @@ section:nth-child(2n+2) {
     width: 176px;
     height: 49px;
     border: 1px solid #5562FF;
+    background-color: #1D1C24;
     border-radius: 8px;
     text-align: center;
     color: #5562FF;
@@ -150,17 +144,23 @@ section:nth-child(2n+2) {
     height: 200px;
     width: 384px;
     background: #F0EFF5;
-    border: 1px solid #E7E6EF;
+    border: 1px solid #586C7A;
     border-radius: 16px;
+    background-color: #191920;
 }
 
 .code * {
     margin: 0;
     font-family: 'Barlow';
     font-style: normal;
+    color: #fff;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+.code h5 {
+    color: #586C7A;
 }
 
 .code h4 span {
@@ -359,4 +359,51 @@ section:nth-child(2n+2) {
     display: flex;
     align-items: center;
     color: rgba(249, 249, 252, 0.6);
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+    animation: animate 12s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
 }
