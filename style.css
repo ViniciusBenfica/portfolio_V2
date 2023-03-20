@@ -53,6 +53,7 @@ section>div {
 .bubbles {
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 .bubbles span {
@@ -225,8 +226,14 @@ section>div {
 }
 
 .about>div:last-child {
-    width: 60%;
+    width: 50%;
 }
+
+.journey{
+    align-self: flex-start;
+    transition: transform 0.2s ease-out;
+}
+
 
 .works {
     display: flex;
@@ -242,12 +249,9 @@ section>div {
 }
 
 .works>div {
-    box-sizing: border-box;
-    /* padding: 64px 24px; */
     width: 100%;
     height: 287px;
     display: flex;
-    align-content: space-between;
 }
 
 .works>div>div:first-child {
@@ -264,6 +268,8 @@ section>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
     height: 100%;
 }
 

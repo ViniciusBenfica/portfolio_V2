@@ -1,23 +1,27 @@
-const skills = [
-    { name: "html", porcentagem: "84%" },
-    // {name: "next", porcentagem: "10%"},
-    { name: "vue", porcentagem: "50%" },
-    { name: "react", porcentagem: "90%" },
-    { name: "nest", porcentagem: "68%" },
-    { name: "sass", porcentagem: "50%" },
-    { name: "node", porcentagem: "65%" },
-    // {name: "javascript", porcentagem: "50%"},
-    { name: "typescript", porcentagem: "50%" },
-    { name: "css", porcentagem: "85%" },
-]
+const sections = document.querySelectorAll('.home, .about');
+const journey = document.querySelector('.journey');
+const teste = document.querySelector('.about');
 
-skills.map((item) => {
-    $(".skillsBar").append(`
-    <div>
-        <h3>${item.name}</h3>
-        <div class="bar-out">
-            <div style="width: ${item.porcentagem} "class="inside-bar"></div>
-        </div>
-    </div>
-    `)
-}) 
+const changeURLSection = (section) => {
+    history.pushState(null, null, `/index.html#${section.id}`);
+}
+
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPos >= sectionTop - sectionHeight / 2 && scrollPos < sectionTop + sectionHeight / 2) {
+            changeURLSection(section)
+
+          /*   if (section.id === "about") {
+                journey.style.transform = `translateY(${normalizedScrollPos / containerHeight * 100}%)`;
+            } else {
+                journey.style.transform = `translateY(${0}px)`;
+            } */
+
+        }
+    });
+});
