@@ -14,6 +14,12 @@ section>div {
     justify-content: space-between;
 }
 
+marquee{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
 .header {
     align-items: center;
     height: 10vh;
@@ -116,11 +122,7 @@ section>div {
     line-height: 29px;
 }
 
-.details h3 span {
-    color: #5562FF
-}
-
-.details h1 span {
+.details h3 span, .details h1 span {
     color: #5562FF
 }
 
@@ -232,9 +234,7 @@ section>div {
 .journey{
     position: sticky;
     top: 50%;
-    transform: translateY(-50%);
     align-self: flex-start;
-    transition: transform 0.2s ease-out;
 }
 
 
@@ -304,102 +304,8 @@ section>div {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.skills {
-    height: 318px;
-}
-
-.skills>div {
-    width: 40%;
-}
-
-.skills-text h2 {
-    font-family: 'Cabin';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 115%;
-    color: #1D1C24;
-}
-
-.skills-text h4 {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    color: rgba(29, 28, 36, 0.6);
-}
-
-.skillsBar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 80%;
-}
-
-.skillsBar h3 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #1D1C24;
-}
-
-.bar-out {
-    width: 90%;
-    height: 15px;
-    background-color: #F9F9FC;
-    border: 1px solid #E7E6EF;
-    border-radius: 200px;
-    overflow: hidden;
-}
-
-.inside-bar {
-    height: 15px;
-    width: 0;
-    background-color: #5562FF;
-    border-radius: 10px;
+.findMe {
+    height: 100vh;
 }
 
 .findMe>div {
@@ -412,6 +318,10 @@ section>div {
     align-items: center;
 }
 
+.linkMe span:hover {
+    border-bottom: 1px solid #fff;
+}
+
 .linkMe span {
     font-family: 'Barlow';
     font-style: normal;
@@ -421,7 +331,6 @@ section>div {
     display: flex;
     align-items: center;
     letter-spacing: 1px;
-    color: rgba(29, 28, 36, 0.6);
 }
 
 .startProject {
