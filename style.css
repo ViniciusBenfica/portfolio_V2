@@ -16,8 +16,13 @@ section>div {
 
 marquee{
     margin: 100px 0px;
+}
+
+marquee >div{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 a{
