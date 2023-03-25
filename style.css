@@ -15,9 +15,14 @@ section>div {
 }
 
 marquee{
-    height: 100px;
+    margin: 100px 0px;
     display: flex;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .header {
@@ -316,21 +321,28 @@ marquee{
     margin-top: 10px;
     display: flex;
     align-items: center;
+    height: 30px;
 }
 
 .linkMe span:hover {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: border-bottom 0.5s;
 }
 
 .linkMe span {
     font-family: 'Barlow';
     font-style: normal;
+    border-bottom: 1px solid transparent;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     display: flex;
     align-items: center;
     letter-spacing: 1px;
+}
+
+.linkMe svg {
+    border-bottom: 1px solid transparent;
 }
 
 .startProject {

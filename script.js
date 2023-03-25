@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('.home, .about');
+const sections = document.querySelectorAll('.home, .about, .findMe');
 
 const changeURLSection = (section) => {
     history.pushState(null, null, `/index.html#${section.id}`);
