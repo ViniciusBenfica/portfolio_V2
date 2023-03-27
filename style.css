@@ -15,14 +15,20 @@ section>div {
 }
 
 marquee{
-    margin: 100px 0px;
+    padding: 10px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+
 }
 
-marquee >div{
+marquee div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
 
+
+marquee span{
+    margin: 0px 20px;
 }
 
 a{
@@ -31,31 +37,30 @@ a{
 }
 
 .header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
     align-items: center;
-    height: 10vh;
-    border-bottom: 2px solid #E7E6EF;
+    justify-content: space-between;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
 }
 
-.header h2 {
+.header >div {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+
+.header h3 {
     color: #5562FF;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-}
-
-.header>div {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1D1C24;
-    cursor: pointer;
 }
 
 .background {
@@ -247,7 +252,6 @@ a{
     align-self: flex-start;
 }
 
-
 .works {
     display: flex;
     flex-direction: column;
@@ -313,6 +317,35 @@ a{
     line-height: 130%;
     margin: 0;
 }
+
+.technologies{
+    height: 100vh;
+}
+
+.technologies>div {
+    z-index: 2;
+    width: 40%;
+}
+
+.technologies-icons{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.technologies-icons > div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technologies-icons h4{
+    font-family: 'Barlow';
+    margin: 0;
+}
+
 
 .findMe {
     height: 100vh;
