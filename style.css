@@ -109,7 +109,7 @@ a {
 .details h1 {
     font-family: 'Cabin';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 64px;
     line-height: 115%;
     margin: 0;
@@ -280,18 +280,15 @@ a {
 }
 
 .about>div:first-child {
-    z-index: 1;
     width: 40%;
 }
 
 .about>div:last-child {
-    z-index: 1;
     width: 50%;
 }
 
 .journey {
     position: sticky;
-    top: 50%;
     align-self: flex-start;
 }
 

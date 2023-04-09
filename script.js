@@ -4,6 +4,12 @@ const changeURLSection = (section) => {
     history.pushState(null, null, `/index.html#${section.id}`);
 }
 
+const centerJourney = () => {
+    const journey = document.querySelector('.journey');
+    const heightJourney = journey.offsetHeight;
+    journey.style.top = `calc(50% - ${heightJourney / 2}px)`;
+}
+
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
 
@@ -17,3 +23,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+centerJourney();
+window.addEventListener('resize', centerJourney);
