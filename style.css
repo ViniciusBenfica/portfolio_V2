@@ -224,7 +224,7 @@ header h3{
 }
 
 .code h3 span {
-    color: var(--text-color-1);
+    color: #7d50df;
 }
 
 .arrow {
@@ -479,7 +479,6 @@ header h3{
     width: 40px;
 }
 
-
 .bubbly-button {
     all: unset;
     font-family: 'Inter';
@@ -495,7 +494,7 @@ header h3{
     background-color: var(--background);
     border-radius: 8px;
     text-align: center;
-    color: var(--text-color-1);
+    color: #fff;
     cursor: pointer;
     position: relative;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
