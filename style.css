@@ -590,7 +590,7 @@ header h3 {
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1150px) {
 
     section>div {
         padding: 0 5%;
