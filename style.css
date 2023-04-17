@@ -50,7 +50,7 @@ a {
     color: #fff;
 }
 
-header{
+header {
     position: absolute;
     z-index: 2;
     right: 50%;
@@ -68,7 +68,7 @@ header{
     background: linear-gradient(to right, #0d0c1a, #442091);
 }
 
-header h3{
+header h3 {
     cursor: pointer;
     font-family: 'Cabin';
     font-style: normal;
@@ -284,7 +284,7 @@ header h3{
     align-self: flex-start;
 }
 
-.journey h2{
+.journey h2 {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 700;
@@ -292,11 +292,11 @@ header h3{
     line-height: 40px;
 }
 
-.journey h2 span{
+.journey h2 span {
     color: var(--text-color-1);
 }
 
-.journey h4{
+.journey h4 {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 500;
@@ -380,13 +380,26 @@ header h3{
     width: 40%;
 }
 
-.technologies h3{
+.technologies h3 {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     margin: 0;
+}
+
+.title-technologies {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.title-technologies span {
+    color: var(--text-color-1);
 }
 
 .technologies-icons {
@@ -486,10 +499,10 @@ header h3{
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    padding: 16px;
+    padding: 16px 36px;
     box-sizing: border-box;
-    width: 176px;
-    height: 49px;
+    width: auto;
+    height: auto;
     border: 1px solid #6f33f1;
     background-color: var(--background);
     border-radius: 8px;
@@ -574,5 +587,87 @@ header h3{
     100% {
         background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@media (max-width: 990px) {
+
+    section>div {
+        padding: 0 5%;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    header h3 {
+        font-size: 20px;
+    }
+
+    .background {
+        height: 50vh;
+    }
+
+    .home {
+        height: 50vh;
+    }
+
+    .bubbly-button {
+        font-size: 22px;
+    }
+
+    .home>div {
+        width: 100%;
+    }
+
+    .technologies {
+        height: 50vh;
+    }
+
+    .details h4 {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .technologies h3 {
+        font-size: 25px;
+    }
+
+    .works h2 {
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    .works h4 {
+        font-size: 27px;
+        line-height: 25px;
+        margin: 6px 0;
+    }
+
+    .works h3 {
+        font-size: 20px;
+        line-height: 130%;
+        margin: 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .code {
+        display: none;
+    }
+
+    .journey {
+        display: none;
+    }
+
+    .about>div:last-child {
+        width: 100%;
+    }
+
+    .findMe {
+        height: 30vh;
     }
 }
