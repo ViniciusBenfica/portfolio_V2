@@ -590,6 +590,7 @@ header h3 {
     }
 }
 
+
 @media (max-width: 1150px) {
 
     section>div {
@@ -600,8 +601,83 @@ header h3 {
         width: 100vw;
     }
 
-    header h3 {
+    .home>div {
+        width: 100%;
+    }
+
+    .details h4 {
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    .details h3{
         font-size: 20px;
+
+    }
+    .details h1{
+        font-size: 30px;
+    }
+
+    .bubbly-button {
+        font-size: 13px;
+    }
+
+    .works h2 {
+        font-size: 26px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    .works h4 {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 6px 0;
+    }
+
+    .works h3 {
+        font-size: 13px;
+        line-height: 130%;
+        margin: 0;
+    } 
+
+    .technologies>div{
+        margin: auto;
+        width: 100%;
+    }
+
+    .technologies>div:last-child {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .code {
+        display: none;
+    }
+
+    .journey {
+        display: none;
+    }
+
+    .about>div:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    section>div {
+        padding: 0 5%;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    header h3 {
+        font-size: 13px;
     }
 
     .background {
@@ -609,7 +685,7 @@ header h3 {
     }
 
     .home {
-        height: 50vh;
+        height: 70vh;
     }
 
     .bubbly-button {
@@ -634,21 +710,19 @@ header h3 {
     }
 
     .works h2 {
-        font-size: 36px;
+        font-size: 23px;
         line-height: 40px;
         margin: 0;
     }
 
     .works h4 {
-        font-size: 27px;
+        font-size: 15px;
         line-height: 25px;
         margin: 6px 0;
     }
 
     .works h3 {
-        font-size: 20px;
-        line-height: 130%;
-        margin: 0;
+        font-size: 13px;
     }
 
     .arrow {
@@ -670,4 +744,9 @@ header h3 {
     .findMe {
         height: 30vh;
     }
+
+    .linkMe span {
+        font-size: 13px;
+    }
+    
 }
