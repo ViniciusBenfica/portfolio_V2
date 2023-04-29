@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('.home, .about, .findMe');
+const sections = document.querySelectorAll('.home, .about, .findMe, .technologies');
 
 const changeURLSection = (section) => {
     history.pushState(null, null, `/index.html#${section.id}`);
@@ -41,5 +41,5 @@ var animateButton = function (e) {
 var bubblyButtons = document.getElementsByClassName("bubbly-button");
 
 for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
+    bubblyButtons[i].addEventListener('mouseenter', animateButton, false);
 }

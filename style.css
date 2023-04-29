@@ -77,6 +77,10 @@ header h3 {
     line-height: 29px;
 }
 
+header h3:hover {
+    color: #a074ff;
+}
+
 .background {
     position: absolute;
     width: 100%;
@@ -162,6 +166,7 @@ header h3 {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+    margin-bottom: 40px;
 }
 
 .details div {
@@ -224,7 +229,7 @@ header h3 {
 }
 
 .code h3 span {
-    color: #7d50df;
+    color: #a074ff;
 }
 
 .arrow {
@@ -330,7 +335,21 @@ header h3 {
     justify-content: center;
     width: 50%;
     height: 100%;
-    background: #090a0f;
+    background: linear-gradient(45deg, #03030D, #100F40, #6f33f1);
+    background-size: 300% 300%;
+    animation: color-background 5s ease infinite;
+}
+
+@keyframes color-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .works>div>div:last-child {
@@ -664,9 +683,18 @@ header h3 {
     .about>div:last-child {
         width: 100%;
     }
+
+    .title-technologies{
+        font-size: 40px;
+    }
+
+    .findMe h1{
+        font-size: 40px;
+    }
+    
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     section>div {
         padding: 0 5%;
@@ -689,7 +717,7 @@ header h3 {
     }
 
     .bubbly-button {
-        font-size: 22px;
+        font-size: 12px;
     }
 
     .home>div {
@@ -702,27 +730,27 @@ header h3 {
 
     .details h4 {
         line-height: 30px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .technologies h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .works h2 {
-        font-size: 23px;
+        font-size: 20px;
         line-height: 40px;
         margin: 0;
     }
 
     .works h4 {
-        font-size: 15px;
+        font-size: 12px;
         line-height: 25px;
         margin: 6px 0;
     }
 
     .works h3 {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .arrow {
@@ -747,6 +775,18 @@ header h3 {
 
     .linkMe span {
         font-size: 13px;
+    }
+
+    .linkMe img {
+        width: 30px;
+    }
+
+    .title-technologies{
+        font-size: 30px;
+    }
+
+    .findMe h1{
+        font-size: 30px;
     }
     
 }
