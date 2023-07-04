@@ -300,7 +300,7 @@ header h3:hover {
   color: var(--text-color-1);
 }
 
-.journey h4 {
+.journey p {
   font-family: "Cabin";
   font-style: normal;
   font-weight: 500;
@@ -380,7 +380,7 @@ header h3:hover {
   margin: 6px 0;
 }
 
-.works h3 {
+.works p {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
