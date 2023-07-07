@@ -219,16 +219,20 @@ header h3:hover {
   line-height: 24px;
 }
 
-.code h5 {
+.code h2 {
   color: #8e9396;
 }
 
-.code h4 span {
+.code h3 span {
   color: var(--text-color-2);
 }
 
-.code h3 span {
+.code h4 span {
   color: #a074ff;
+}
+
+.code h5 span {
+  color: #8e9396;
 }
 
 .arrow {
@@ -443,7 +447,7 @@ header h3:hover {
   transform: scale(1.1);
 }
 
-.technologies-icons h4 {
+.technologies-icons span{
   font-family: "Barlow";
   font-size: 14px;
   margin: 0;
@@ -797,7 +801,7 @@ header h3:hover {
     height: 35px;
   }
 
-  .technologies-icons h4 {
+  .technologies-icons span {
     font-size: 10px;
   }
 
