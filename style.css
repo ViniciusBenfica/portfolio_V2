@@ -779,6 +779,11 @@ header h3:hover {
     margin: 0;
   }
 
+  .works p {
+    font-size: 11px;
+  }
+  
+
   marquee {
     margin: 50px 0px;
     padding: 20px;
