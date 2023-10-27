@@ -2,9 +2,9 @@
 
 ![Resultado final do projeto](img/preview.webp)
 
-<h4 align="center"><a href="https://viniciusbenfica.com.br/">https://viniciusbenfica.com.br/</a></h4>
+<h4 align="center"><a target="_blank" href="https://viniciusbenfica.com.br/">https://viniciusbenfica.com.br/</a></h4>
 
-## 📚 Seções
+## Seções
 
 O site é composto por quatro seções:
 
