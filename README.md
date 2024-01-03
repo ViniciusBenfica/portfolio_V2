@@ -11,7 +11,7 @@ O site é composto por quatro seções:
 - **Início:** Nele temos uma breve apresentação;
 - **Minha jornada:** Nessa seção tem uma breve descrição sobre minhas experiências profissionais;
 - **Tecnologias:** Abordo sobre algumas tecnologias onde tenho mais experiência;
-- **Onde me encontrar:** Disponibilizo um link com algumas das minhas redes sociais;
+- **Onde me encontrar:** Disponibilizo links com algumas das minhas redes sociais;
 
 ---
 
