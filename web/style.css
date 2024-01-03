@@ -271,15 +271,8 @@ header h3:hover {
   }
 }
 
-.about > div:first-child {
-  width: 40%;
-}
-
-.about > div:last-child {
-  width: 50%;
-}
-
 .journey {
+  width: 40%;
   position: sticky;
   align-self: flex-start;
 }
@@ -306,6 +299,7 @@ header h3:hover {
 }
 
 .works {
+  width: 50%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -320,7 +314,7 @@ header h3:hover {
 
 .works > div {
   width: 100%;
-  height: 287px;
+  height: 300px;
   display: flex;
 }
 
@@ -410,7 +404,13 @@ header h3:hover {
   font-weight: 600;
   font-size: 64px;
   padding-top: 60px;
+  margin: 0;
   text-align: center;
+}
+
+.about{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .title-technologies span {
@@ -649,7 +649,7 @@ header h3:hover {
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1280px) {
   section > div {
     padding: 0 5%;
   }
@@ -717,7 +717,7 @@ header h3:hover {
     display: none;
   }
 
-  .about > div:last-child {
+  .works {
     width: 100%;
   }
 
@@ -783,7 +783,6 @@ header h3:hover {
     font-size: 11px;
   }
   
-
   marquee {
     margin: 50px 0px;
     padding: 20px;
@@ -824,7 +823,7 @@ header h3:hover {
     display: none;
   }
 
-  .about > div:last-child {
+  .works{
     width: 100%;
   }
 
