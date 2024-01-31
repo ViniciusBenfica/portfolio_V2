@@ -38,8 +38,12 @@ var animateButton = function (e) {
     }, 700);
 };
 
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
+document.getElementById("bubbly-button").addEventListener('mouseenter', animateButton, false)
 
-for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('mouseenter', animateButton, false);
-}
+document.getElementById('change-language').addEventListener('click', function() {
+    if (this.src.includes('Brasil.webp')) {
+        this.src = './img/USA.webp';
+    } else {
+        this.src = './img/Brasil.webp';
+    }
+});
