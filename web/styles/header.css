@@ -1,0 +1,46 @@
+header {
+	position: absolute;
+	z-index: 2;
+	right: 50%;
+	transform: translateX(50%);
+	width: 50%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-left: 3px solid #6f33f1;
+	border-bottom: 3px solid #6f33f1;
+	border-right: 3px solid #6f33f1;
+	background: linear-gradient(to right, #0d0c1a, #442091);
+}
+  
+header h3 {
+	cursor: pointer;
+	font-family: "Cabin";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 29px;
+}
+
+header h3:hover {
+	color: #a074ff;
+}
+
+@media (max-width: 1280px) {
+	header {
+		width: 100vw;
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+	  width: 100vw;
+	}
+  
+	header h3 {
+	  font-size: 13px;
+	}
+}

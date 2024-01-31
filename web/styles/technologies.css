@@ -1,0 +1,96 @@
+
+.title-technologies {
+	font-family: "Cabin";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 64px;
+	padding-top: 60px;
+	margin: 0;
+	text-align: center;
+}
+  
+  
+.title-technologies span {
+	color: #6f33f1;
+}
+
+.technologies {
+	height: 70vh;
+	min-height: 450px;
+}
+  
+  .technologies > div {
+	z-index: 2;
+	width: 40%;
+}
+  
+.technologies p {
+	font-family: "Cabin";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	margin: 0;
+}
+  
+.technologies-icons {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(3, 1fr);
+}
+  
+.technologies-icons > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+.technologies-icons img {
+	width: 50px;
+	height: 50px;
+	transition: transform 0.3s;
+}
+  
+.technologies-icons img:hover {
+	transform: scale(1.1);
+}
+  
+.technologies-icons span{
+	font-family: "Barlow";
+	font-size: 14px;
+	margin: 0;
+}
+
+@media (max-width: 1280px) {
+	.title-technologies {
+		font-size: 40px;
+	}
+
+	.technologies > div {
+	  margin: auto;
+	  width: 100%;
+	}
+  
+	.technologies > div:last-child {
+	  display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.technologies {
+	  height: 50vh;
+	}
+  
+	.technologies h3 {
+	  font-size: 20px;
+	}
+
+	.technologies-icons img {
+	  width: 35px;
+	  height: 35px;
+	}
+  
+	.technologies-icons span {
+	  font-size: 10px;
+	}
+}
