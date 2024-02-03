@@ -41,9 +41,17 @@ var animateButton = function (e) {
 document.getElementById("bubbly-button").addEventListener('mouseenter', animateButton, false)
 
 document.getElementById('change-language').addEventListener('click', function() {
-    if (this.src.includes('Brasil.webp')) {
-        this.src = './img/USA.webp';
-    } else {
-        this.src = './img/Brasil.webp';
-    }
+    let currentLang = this.src.includes('Brasil.webp') ? 'en' : 'pt';
+    switchLanguage(currentLang);
+    this.src = currentLang === 'en' ? './img/USA.webp' : './img/Brasil.webp';
 });
+
+function switchLanguage(lang) {
+    document.querySelectorAll("[data-key]").forEach(elem => {
+        let key = elem.getAttribute("data-key");
+        if (languages[lang][key]) {
+            console.log(elem.textContent)
+            elem.textContent = languages[lang][key];
+        }
+    });
+}
