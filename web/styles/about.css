@@ -96,8 +96,8 @@
 .works h3 {
 	font-family: "Barlow";
 	font-style: normal;
-	font-weight: 500;
-	font-size: 21px;
+	font-weight: 700;
+	font-size: 17px;
 	line-height: 25px;
 	margin: 6px 0;
 }
@@ -156,7 +156,7 @@
 	}
   
 	.works p {
-	  font-size: 11px;
+	  font-size: 10px;
 	}
 	
 	.works h4 {

@@ -38,7 +38,7 @@
 	display: flex;
 }
   
-.linkMe span:hover {
+.linkMe:hover span {
 	border-bottom: 3px solid #6f33f1;
 	transition: border-bottom 0.5s;
 }
