@@ -76,6 +76,20 @@ a {
     0 0 100px #26a646;
 }
 
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0b0c14;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #3E3F40;
+  border: 6px solid #0a0b10;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(100vh) scale(0);
