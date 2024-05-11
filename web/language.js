@@ -5,8 +5,6 @@ const languages = {
 		findMe: "Onde me Encontrar",
 		am: "Sou",
 		developer: "desenvolvedor",
-		aboutMe:
-			"Sou desenvolvedor frontend em JavaScript formado em Ciência da Computação e estou sempre buscando novos desafios. Sou um entusiasta da tecnologia e sempre me atualizo com as novidades do mundo tecnológico.",
 		myProjects: "Meus Projetos",
 		myJourneyHow: "Minha Jornada como",
 		resume:
@@ -38,8 +36,6 @@ const languages = {
 		findMe: "Where to Find Me",
 		am: "I am",
 		developer: "a developer",
-		aboutMe:
-			"I am a frontend developer in JavaScript, graduated in Computer Science and always looking for new challenges. I am a technology enthusiast and always keep up with the news in the tech world.",
 		myProjects: "My Projects",
 		myJourneyHow: "My Journey as",
 		resume:
