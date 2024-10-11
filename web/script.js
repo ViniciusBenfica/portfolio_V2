@@ -58,8 +58,22 @@ function switchLanguage(lang) {
 	for (const elem of elements) {
 		const key = elem.getAttribute("data-key");
 		if (languages[lang][key]) {
-			console.log(elem.textContent);
 			elem.textContent = languages[lang][key];
 		}
 	}
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+	const firstChild = document.querySelector(".code-first");
+	const lastChild = document.querySelector(".code-second");
+
+	firstChild.addEventListener("animationend", () => {
+		firstChild.style.animation = "none";
+		firstChild.style.opacity = "1";
+	});
+
+	lastChild.addEventListener("animationend", () => {
+		lastChild.style.animation = "none";
+		lastChild.style.opacity = "1";
+	});
+});
